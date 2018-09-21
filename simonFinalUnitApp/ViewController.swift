@@ -1,4 +1,6 @@
+
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -8,10 +10,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var colorsFrame: UIView!
     @IBOutlet weak var startButton: UIButton!
     
+    var sound: AVAudioPlayer
+    var timer = Timer()
+    var pattern = [Int]()
+    var index = 0
+    var playTurn = false
+    var gameOver = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+      colorsFrame.backgroundColor = .red
         
     
     
