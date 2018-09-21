@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036548592155645D008B8209 /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 036548542155645C008B8209 /* 0.wav */; };
+		0365485A2155645D008B8209 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 036548552155645D008B8209 /* 1.wav */; };
+		0365485B2155645D008B8209 /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = 036548562155645D008B8209 /* start.wav */; };
+		0365485C2155645D008B8209 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 036548572155645D008B8209 /* 2.wav */; };
+		0365485D2155645D008B8209 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 036548582155645D008B8209 /* 3.wav */; };
+		0365486021556483008B8209 /* hiscore.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0365485E21556483008B8209 /* hiscore.wav */; };
+		0365486121556483008B8209 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0365485F21556483008B8209 /* lose.wav */; };
 		7D431C912152BCBB002ADA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D431C902152BCBB002ADA03 /* AppDelegate.swift */; };
 		7D431C932152BCBB002ADA03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D431C922152BCBB002ADA03 /* ViewController.swift */; };
 		7D431C962152BCBB002ADA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D431C942152BCBB002ADA03 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		036548542155645C008B8209 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
+		036548552155645D008B8209 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		036548562155645D008B8209 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
+		036548572155645D008B8209 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		036548582155645D008B8209 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		0365485E21556483008B8209 /* hiscore.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiscore.wav; sourceTree = "<group>"; };
+		0365485F21556483008B8209 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		7D431C8D2152BCBB002ADA03 /* simonFinalUnitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simonFinalUnitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D431C902152BCBB002ADA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D431C922152BCBB002ADA03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +74,13 @@
 				7D431C972152BCBC002ADA03 /* Assets.xcassets */,
 				7D431C992152BCBC002ADA03 /* LaunchScreen.storyboard */,
 				7D431C9C2152BCBC002ADA03 /* Info.plist */,
+				036548542155645C008B8209 /* 0.wav */,
+				036548552155645D008B8209 /* 1.wav */,
+				036548572155645D008B8209 /* 2.wav */,
+				036548582155645D008B8209 /* 3.wav */,
+				036548562155645D008B8209 /* start.wav */,
+				0365485E21556483008B8209 /* hiscore.wav */,
+				0365485F21556483008B8209 /* lose.wav */,
 			);
 			path = simonFinalUnitApp;
 			sourceTree = "<group>";
@@ -122,7 +143,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0365485A2155645D008B8209 /* 1.wav in Resources */,
+				0365485B2155645D008B8209 /* start.wav in Resources */,
 				7D431C9B2152BCBC002ADA03 /* LaunchScreen.storyboard in Resources */,
+				0365486021556483008B8209 /* hiscore.wav in Resources */,
+				036548592155645D008B8209 /* 0.wav in Resources */,
+				0365486121556483008B8209 /* lose.wav in Resources */,
+				0365485D2155645D008B8209 /* 3.wav in Resources */,
+				0365485C2155645D008B8209 /* 2.wav in Resources */,
 				7D431C982152BCBC002ADA03 /* Assets.xcassets in Resources */,
 				7D431C962152BCBB002ADA03 /* Main.storyboard in Resources */,
 			);

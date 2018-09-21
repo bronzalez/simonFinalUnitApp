@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var colorsFrame: UIView!
     @IBOutlet weak var startButton: UIButton!
     
-    var sound: AVAudioPlayer
+    var sound = AVAudioPlayer()
     var timer = Timer()
     var pattern = [Int]()
     var index = 0
@@ -20,8 +20,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       colorsFrame.backgroundColor = .red
-        
-    
     
     }
 
@@ -31,6 +29,10 @@ class ViewController: UIViewController {
     @IBAction func onStartButtonTapped(_ sender: UIButton) {
     }
     
+    
 
+    
+    
+    
 }
 
