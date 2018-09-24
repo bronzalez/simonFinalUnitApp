@@ -1,4 +1,6 @@
 
+
+
 import UIKit
 import AVFoundation
 
@@ -10,8 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var colorsFrame: UIView!
     @IBOutlet weak var startButton: UIButton!
     
-    var sound = AVAudioPlayer()
+
     var timer = Timer()
+    var sound: AVAudioPlayer?
     var pattern = [Int]()
     var index = 0
     var playTurn = false
