@@ -26,6 +26,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
+        for number in 0..<colorDisplays.count{
+            if colorDisplays[number].frame.contains(sender.location(in: colorsFrame)) {
+            flashColor(number: number)
+                index += 1
+        }
     }
     
     @IBAction func onStartButtonTapped(_ sender: UIButton) {
