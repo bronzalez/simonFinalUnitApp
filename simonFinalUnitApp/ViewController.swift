@@ -1,4 +1,6 @@
 
+
+
 import UIKit
 import AVFoundation
 
@@ -12,6 +14,7 @@ class ViewController: UIViewController {
     
     var sound: AVAudioPlayer?
     var timer = Timer()
+    var sound: AVAudioPlayer?
     var pattern = [Int]()
     var index = 0
     var playTurn = false
@@ -20,8 +23,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       colorsFrame.backgroundColor = .red
-        
-    
     
     }
 
@@ -31,7 +32,11 @@ class ViewController: UIViewController {
     @IBAction func onStartButtonTapped(_ sender: UIButton) {
     }
     
+    
 
+    
+    
+    
 }
 
 
