@@ -65,7 +65,6 @@ class ViewController: UIViewController {
     }
     
 
-}
 
     func addToPattern() {
         pattern.append(Int(arc4random_uniform(4)))
