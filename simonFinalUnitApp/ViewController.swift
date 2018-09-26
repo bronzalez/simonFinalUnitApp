@@ -37,8 +37,6 @@ class ViewController: UIViewController {
             }
         }
     }
-   
-
     
     func flashColor(number: Int) {
         self.playSound(fileName: String(number))
@@ -55,17 +53,15 @@ class ViewController: UIViewController {
     @IBAction func onStartButtonTapped(_ sender: Any) {
     }
     
-    
     @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
         for number in 0..<colorDisplays.count{
             if colorDisplays[number].frame.contains(sender.location(in: colorsFrame)) {
-            flashColor(number: number)
+                flashColor(number: number)
                 index += 1
+            }
         }
     }
     
-
-
     func addToPattern() {
         pattern.append(Int(arc4random_uniform(4)))
     }
@@ -75,19 +71,24 @@ class ViewController: UIViewController {
         addToPattern()
         startButton.alpha = 1.0
     }
+    func displayPattern() {
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: (#selector(ViewController.nextColor)), userInfo: nil, repeats: true)
+    }
+    @objc func nextColor() {
+        if index < pattern.count {
+            flashColor(number: pattern[index])
+            index += 1
+        }
+        else {
+            timer.invalidate()
+            index = 0
+            playTurn = true
+            messageLabel.text = "Your Turn"
+        }
+    }
     
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-}
