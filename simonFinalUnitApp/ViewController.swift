@@ -21,20 +21,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorsFrame.backgroundColor = .red
+        colorsFrame.backgroundColor = .purple 
         
     }
     
-    @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
-        for number in 0..<colorDisplays.count{
-            if colorDisplays[number].frame.contains(sender.location(in: colorsFrame)) {
-            flashColor(number: number)
-                index += 1
-        }
-    }
-    
-    @IBAction func onStartButtonTapped(_ sender: UIButton) {
-    }
     func playSound(fileName: String){
         if let path = Bundle.main.path(forResource: fileName, ofType: "wav") {
             let url = URL(fileURLWithPath: path)
@@ -47,15 +37,9 @@ class ViewController: UIViewController {
             }
         }
     }
-    func addToPattern() {
-        pattern.append(Int(arc4random_uniform(4)))
-    }
-    func restart() {
-        pattern.removeAll()
-        index = 0
-        addToPattern()
-        startButton.alpha = 1.0
-    }
+   
+
+    
     func flashColor(number: Int) {
         self.playSound(fileName: String(number))
         UIView.transition(with: colorDisplays[number], duration: 0.2, options: .transitionCrossDissolve, animations: {
@@ -67,10 +51,33 @@ class ViewController: UIViewController {
         }
         
     }
-}
+    
+    @IBAction func onStartButtonTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
+        for number in 0..<colorDisplays.count{
+            if colorDisplays[number].frame.contains(sender.location(in: colorsFrame)) {
+            flashColor(number: number)
+                index += 1
+        }
+    }
+    
 
 }
 
+    func addToPattern() {
+        pattern.append(Int(arc4random_uniform(4)))
+    }
+    func restart() {
+        pattern.removeAll()
+        index = 0
+        addToPattern()
+        startButton.alpha = 1.0
+    }
+    
+}
 
 
 
@@ -83,3 +90,5 @@ class ViewController: UIViewController {
 
 
 
+
+}
