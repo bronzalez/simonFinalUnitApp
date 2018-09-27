@@ -37,8 +37,8 @@ class ViewController: UIViewController {
             }
         }
     }
-   
-
+    
+    
     
     func flashColor(number: Int) {
         self.playSound(fileName: String(number))
@@ -59,35 +59,35 @@ class ViewController: UIViewController {
     @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
         for number in 0..<colorDisplays.count{
             if colorDisplays[number].frame.contains(sender.location(in: colorsFrame)) {
-            flashColor(number: number)
+                flashColor(number: number)
                 index += 1
+            }
         }
+        
+        
+        
+        func addToPattern() {
+            pattern.append(Int(arc4random_uniform(4)))
+        }
+        func restart() {
+            pattern.removeAll()
+            index = 0
+            addToPattern()
+            startButton.alpha = 1.0
+        }
+        
     }
     
-
-
-    func addToPattern() {
-        pattern.append(Int(arc4random_uniform(4)))
-    }
-    func restart() {
-        pattern.removeAll()
-        index = 0
-        addToPattern()
-        startButton.alpha = 1.0
-    }
     
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
