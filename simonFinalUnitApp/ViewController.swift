@@ -55,7 +55,6 @@ class ViewController: UIViewController {
     @IBAction func onStartButtonTapped(_ sender: Any) {
     }
     
-    
     @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
         for number in 0..<colorDisplays.count{
             if colorDisplays[number].frame.contains(sender.location(in: colorsFrame)) {
